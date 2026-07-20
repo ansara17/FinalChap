@@ -1,0 +1,8 @@
+Masukkan musik instrumental di folder ini dengan nama tepat:
+
+background-music.mp3
+
+Saran:
+- Piano, akustik, atau lofi yang tenang
+- Ukuran di bawah 5 MB
+- Bitrate 128–160 kbps

@@ -1,0 +1,8 @@
+Masukkan foto utama Amel di folder ini dengan nama tepat:
+
+amel.jpg
+
+Saran:
+- Rasio portrait 4:5
+- Ukuran sekitar 1200 x 1500 px
+- Kompres menjadi 300–700 KB

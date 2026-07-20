@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#f7edf2" />
+  <meta name="description" content="A gentle digital card from Ansa for Amel before her thesis defense on 21 July 2026." />
+  <title>For Amel — The Final Chapter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <noscript><div class="noscript-message">Website ini membutuhkan JavaScript agar seluruh interaksinya dapat digunakan.</div></noscript>
+
+  <audio id="backgroundMusic" loop preload="metadata">
+    <source src="assets/music/background-music.mp3" type="audio/mpeg" />
+  </audio>
+
+  <div class="ambient ambient--one" aria-hidden="true"></div>
+  <div class="ambient ambient--two" aria-hidden="true"></div>
+
+  <header id="appHeader" class="app-header is-hidden" aria-label="Kontrol kartu">
+    <button id="homeButton" class="icon-button" type="button" aria-label="Kembali ke awal" title="Kembali ke awal"><span aria-hidden="true">⌂</span></button>
+    <div class="scene-status" aria-live="polite">
+      <span id="sceneLabel">Chapter 1 of 6</span>
+      <div class="scene-progress" aria-hidden="true"><span id="sceneProgressBar"></span></div>
+    </div>
+    <div class="header-actions">
+      <button id="motionButton" class="icon-button" type="button" aria-label="Kurangi animasi" title="Kurangi animasi"><span aria-hidden="true">◌</span></button>
+      <button id="musicButton" class="icon-button" type="button" aria-label="Putar musik" title="Putar musik"><span id="musicIcon" aria-hidden="true">♪</span></button>
+    </div>
+  </header>
+
+  <main id="app" class="app">
+    <section class="scene scene--opening is-active" data-scene="0" aria-labelledby="openingTitle">
+      <div class="scene-inner scene-inner--centered">
+        <p class="date-chip">21 · 07 · 2026</p>
+        <div class="book-mark" aria-hidden="true"><span class="book-mark__flower">✿</span><span class="book-mark__line"></span></div>
+        <p class="eyebrow">For Amel, before tomorrow</p>
+        <h1 id="openingTitle" class="display-title">The Final Chapter</h1>
+        <p class="display-subtitle">One Last Step Before a New Beginning</p>
+        <div class="opening-message">
+          <p>Tomorrow is the day, Amel.</p>
+          <p>Besok bukan tentang menjadi sempurna. Besok adalah tentang menunjukkan semua hal yang sudah kamu pelajari dan perjuangkan sampai sejauh ini.</p>
+        </div>
+        <button id="enterButton" class="primary-button" type="button">Open This Chapter <span aria-hidden="true">→</span></button>
+        <p class="microcopy">A little space from Ansa, made to help you breathe before tomorrow.</p>
+      </div>
+    </section>
+
+    <section class="scene scene--profile" data-scene="1" aria-labelledby="profileTitle" hidden>
+      <div class="scene-inner profile-layout">
+        <div class="portrait-card">
+          <div class="portrait-card__flowers" aria-hidden="true"><span>✿</span><span>❀</span><span>✦</span></div>
+          <img id="amelPhoto" src="assets/photos/amel.jpg" alt="Foto Akmelia Zahra" />
+          <div id="photoFallback" class="photo-fallback" aria-hidden="true"><strong>AZ</strong><small>Place amel.jpg here</small></div>
+          <span class="portrait-label">THE ONE WHO MADE IT THIS FAR</span>
+        </div>
+        <div class="profile-copy">
+          <p class="eyebrow">Researcher profile</p>
+          <h2 id="profileTitle">Akmelia Zahra</h2>
+          <p class="nickname">also known as Amel</p>
+          <dl class="profile-list">
+            <div><dt>Major</dt><dd>Pendidikan Ekonomi</dd></div>
+            <div><dt>Current Mission</dt><dd>Final Thesis Defense</dd></div>
+            <div class="profile-list__wide"><dt>Research Topic</dt><dd>Pengaruh Literasi Keuangan, Konformitas Teman Sebaya, dan Kecemasan Finansial terhadap Perilaku Keuangan Generasi Z.</dd></div>
+          </dl>
+          <div class="strength-panel">
+            <p class="eyebrow">Things Ansa notices</p>
+            <ul>
+              <li>Tetap melanjutkan meskipun sering cemas.</li>
+              <li>Menyelesaikan sesuatu yang pernah terasa berat.</li>
+              <li>Berusaha memahami setiap bagian penelitiannya.</li>
+              <li>Tetap memiliki sisi ceria di tengah tekanan.</li>
+              <li>Stronger than she gives herself credit for.</li>
+            </ul>
+          </div>
+          <blockquote>Kamu mungkin masih sering merasa belum siap. Tapi seseorang yang benar-benar belum siap tidak akan berhasil sampai sejauh ini.</blockquote>
+          <button class="primary-button js-next-scene" type="button">See How Far You’ve Come <span aria-hidden="true">→</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene scene--journey" data-scene="2" aria-labelledby="journeyTitle" hidden>
+      <div class="scene-inner">
+        <div class="section-heading">
+          <p class="eyebrow">The road behind tomorrow</p>
+          <h2 id="journeyTitle">You Didn’t Get Here by Accident</h2>
+          <p>Sidang memang berlangsung dalam satu hari. Tetapi perjalanan menuju hari itu jauh lebih panjang.</p>
+        </div>
+        <div class="journey-grid" aria-label="Empat bagian perjalanan skripsi">
+          <button class="journey-card" type="button" data-journey-index="0"><span class="journey-card__number">01</span><span class="journey-card__icon" aria-hidden="true">✦</span><strong>The Beginning</strong><small>Tap to open</small></button>
+          <button class="journey-card" type="button" data-journey-index="1"><span class="journey-card__number">02</span><span class="journey-card__icon" aria-hidden="true">⌁</span><strong>The Process</strong><small>Tap to open</small></button>
+          <button class="journey-card" type="button" data-journey-index="2"><span class="journey-card__number">03</span><span class="journey-card__icon" aria-hidden="true">♡</span><strong>The Persistence</strong><small>Tap to open</small></button>
+          <button class="journey-card" type="button" data-journey-index="3"><span class="journey-card__number">04</span><span class="journey-card__icon" aria-hidden="true">→</span><strong>The Final Step</strong><small>Tap to open</small></button>
+        </div>
+        <article id="journeyDetail" class="detail-panel" aria-live="polite">
+          <div class="detail-panel__icon" aria-hidden="true">✿</div>
+          <div><p id="journeyKicker" class="eyebrow">Select a chapter</p><h3 id="journeyDetailTitle">Four small reminders of how far you have come.</h3><p id="journeyDetailText">Buka setiap bagian untuk melihat perjalanan yang membawa Amel sampai ke hari sidang.</p></div>
+        </article>
+        <div class="completion-panel" id="journeyCompletion" hidden>
+          <div><p class="eyebrow">Journey restored</p><strong>Every revision, every anxious night, and every small progress brought you here.</strong></div>
+          <button class="primary-button js-next-scene" type="button">Take This Confidence <span aria-hidden="true">→</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene scene--notes" data-scene="3" aria-labelledby="notesTitle" hidden>
+      <div class="scene-inner">
+        <div class="section-heading">
+          <p class="eyebrow">A quieter place for an anxious mind</p>
+          <h2 id="notesTitle">What I Hope You Remember Tomorrow</h2>
+          <p>Buka satu per satu saat pikiranmu mulai terlalu ramai.</p>
+        </div>
+        <div class="notes-grid">
+          <button class="calm-note" type="button" data-note-index="0"><span aria-hidden="true">✿</span><strong>When You Feel Nervous</strong></button>
+          <button class="calm-note" type="button" data-note-index="1"><span aria-hidden="true">❀</span><strong>When the Lecturer Looks Strict</strong></button>
+          <button class="calm-note" type="button" data-note-index="2"><span aria-hidden="true">✦</span><strong>When Your Mind Goes Blank</strong></button>
+          <button class="calm-note" type="button" data-note-index="3"><span aria-hidden="true">♡</span><strong>When You Are Afraid of Being Wrong</strong></button>
+          <button class="calm-note" type="button" data-note-index="4"><span aria-hidden="true">☁</span><strong>When You Feel Insecure</strong></button>
+          <button class="calm-note" type="button" data-note-index="5"><span aria-hidden="true">✉</span><strong>From Ansa</strong></button>
+        </div>
+        <article id="noteDetail" class="detail-panel detail-panel--notes" aria-live="polite">
+          <div class="detail-panel__icon" aria-hidden="true">✿</div>
+          <div><p id="noteKicker" class="eyebrow">Calm note</p><h3 id="noteTitle">A reminder will appear here.</h3><p id="noteText">Choose one of the notes above.</p></div>
+        </article>
+        <div id="fearPanel" class="fear-panel" hidden>
+          <div class="fear-panel__heading"><p class="eyebrow">Name the fear</p><h3>What feels the scariest right now?</h3></div>
+          <div class="fear-options" role="group" aria-label="Pilih rasa takut yang paling terasa">
+            <button type="button" data-fear="lecturer">Dosen yang terlihat galak</button>
+            <button type="button" data-fear="blank">Takut blank</button>
+            <button type="button" data-fear="wrong">Takut salah menjawab</button>
+            <button type="button" data-fear="nervous">Takut grogi</button>
+            <button type="button" data-fear="all">Semuanya</button>
+          </div>
+          <div id="fearResponse" class="fear-response" aria-live="polite">Pilih salah satu. Tidak ada jawaban yang salah di sini.</div>
+          <button id="continueToLetter" class="primary-button" type="button" disabled>Open Ansa’s Letter <span aria-hidden="true">→</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene scene--letter" data-scene="4" aria-labelledby="letterSceneTitle" hidden>
+      <div class="scene-inner letter-layout">
+        <div class="letter-intro">
+          <p class="eyebrow">From Ansa, for Amel</p>
+          <h2 id="letterSceneTitle">A Letter Before Tomorrow</h2>
+          <p>Tekan amplopnya. Surat ini tidak berisi tuntutan untuk menjadi sempurna. Hanya beberapa hal yang Ansa ingin Amel ingat.</p>
+        </div>
+        <button id="letterEnvelope" class="envelope" type="button" aria-expanded="false">
+          <span class="envelope__back"></span>
+          <span class="envelope__paper"><strong>For Amel</strong><small>Open when your thoughts feel too loud.</small></span>
+          <span class="envelope__flap"></span>
+          <span class="envelope__seal" aria-hidden="true">A</span>
+        </button>
+        <article id="letterPaper" class="letter-paper" hidden>
+          <p>Amel,</p>
+          <p>mungkin malam ini pikiranmu sedang ramai. Kamu mungkin sedang membayangkan dosennya akan seperti apa, pertanyaan apa yang akan muncul, bagaimana kalau kamu blank, bagaimana kalau salah jawab, atau bagaimana kalau besok tidak berjalan sesuai harapanmu.</p>
+          <p>Aku tahu kamu sering merasa takut dan meragukan dirimu sendiri. Tapi aku juga tahu kamu tetap menyelesaikan banyak hal meskipun sedang merasa seperti itu. Dan menurutku, itu adalah salah satu hal yang paling kuat dari kamu.</p>
+          <p>Kamu bisa sampai di tahap sidang bukan karena kebetulan. Ada proses panjang di belakangnya. Ada revisi yang kamu kerjakan, bagian yang harus kamu pahami ulang, rasa lelah, dan banyak hari ketika kamu mungkin ingin berhenti sebentar. Tapi kamu tetap melanjutkan.</p>
+          <p>Besok kamu tidak harus menjadi orang yang paling sempurna di ruangan itu. Kamu hanya perlu menjadi Amel yang sudah belajar, sudah berusaha, dan sudah mengerjakan penelitiannya dengan sungguh-sungguh.</p>
+          <p>Kalau nanti kamu gugup, tidak apa-apa. Kalau harus diam sebentar sebelum menjawab, juga tidak apa-apa. Tarik napas, dengarkan pertanyaannya, lalu jawab pelan-pelan dari apa yang kamu pahami.</p>
+          <p>Aku bangga sama kamu. Bukan hanya karena besok kamu sidang, tapi karena kamu sudah bertahan dan membawa dirimu sampai sejauh ini.</p>
+          <p>Semoga Allah menenangkan hatimu, menjernihkan pikiranmu, memudahkan setiap jawabanmu, dan memberikan hasil terbaik untuk semua usaha yang sudah kamu lakukan.</p>
+          <p class="letter-highlight">And no matter how nervous you feel tonight, please remember:<strong>you are more ready than you think, and I believe in you more than your fear does.</strong></p>
+          <p>I love you.<br /><strong>— Ansa</strong></p>
+          <aside class="bias-note"><strong>P.S.</strong> Besok tetap pakai main character energy, ya. Bahkan Chanyeol pasti setuju kalau Amel kelihatan paling keren saat percaya diri.</aside>
+          <button class="primary-button js-next-scene" type="button">One Last Page <span aria-hidden="true">→</span></button>
+        </article>
+      </div>
+    </section>
+
+    <section class="scene scene--closing" data-scene="5" aria-labelledby="closingTitle" hidden>
+      <div class="scene-inner closing-layout">
+        <p class="date-chip">21 · 07 · 2026</p>
+        <p class="eyebrow">Before you walk into that room</p>
+        <h2 id="closingTitle">Bismillahirrahmanirrahim.</h2>
+        <div class="closing-copy">
+          <p>Besok, masuklah ke ruangan itu dengan tenang. Kamu tidak perlu membawa kesempurnaan. Cukup bawa semua hal yang sudah membuatmu sampai di sini.</p>
+          <ul class="closing-reminders"><li>Tarik napas.</li><li>Dengarkan pertanyaannya.</li><li>Jawab perlahan.</li><li>Percaya pada prosesmu.</li></ul>
+          <p class="prayer">Semoga Allah mudahkan langkah Amel besok, tenangkan hatinya, lancarkan presentasinya, jernihkan pikirannya, dan beri kemudahan dalam menjawab setiap pertanyaan.</p>
+          <p class="closing-highlight">Good luck for your thesis defense, Amel.<br />I’m proud of you, and I’ll be waiting to hear everything after it’s done.</p>
+        </div>
+        <button id="saveCourageButton" class="primary-button" type="button">Keep This With You <span aria-hidden="true">♡</span></button>
+        <div id="savedMessage" class="saved-message" hidden><span aria-hidden="true">✓</span><div><strong>Courage saved. Love sent. Prayers included.</strong><p>From Ansa, for Amel.</p></div></div>
+      </div>
+    </section>
+  </main>
+
+  <nav id="sceneNavigation" class="scene-navigation is-hidden" aria-label="Navigasi kartu">
+    <button id="previousButton" type="button"><span aria-hidden="true">←</span> Previous</button>
+    <div id="sceneDots" class="scene-dots" aria-label="Daftar chapter"></div>
+    <button id="nextButton" type="button">Next <span aria-hidden="true">→</span></button>
+  </nav>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <script src="script.js"></script>
+</body>
+</html>

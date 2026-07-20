@@ -37,3 +37,28 @@ Masukkan `assets/photos/amel.jpg`.
 
 ## Musik
 Masukkan `assets/music/background-music.mp3`.
+
+
+## Palet Calm Morning
+
+File: `style.css`
+
+Cari:
+
+```css
+CALM MORNING EDITION
+```
+
+Warna utama:
+
+```css
+Mist Blue    #E8F0F3
+Powder Blue  #AFC8D3
+Slate Navy   #4E6672
+Warm Beige   #E6D5C4
+Soft Copper  #B78668
+Deep Mocha   #4A403B
+Off White    #FAF9F5
+```
+
+Animasi hanya memakai `opacity` dan `transform` agar tetap ringan.

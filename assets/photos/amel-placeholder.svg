@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500">
-  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e3c6d0"/><stop offset="1" stop-color="#c9bade"/></linearGradient></defs>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#AFC8D3"/><stop offset="1" stop-color="#E6D5C4"/></linearGradient></defs>
   <rect width="1200" height="1500" fill="url(#bg)"/>
-  <circle cx="600" cy="520" r="210" fill="#f9eef3" opacity=".85"/>
-  <path d="M270 1260c55-270 185-410 330-410s275 140 330 410" fill="#f9eef3" opacity=".8"/>
-  <text x="600" y="565" text-anchor="middle" font-family="Georgia, serif" font-size="220" fill="#9c6f88">AZ</text>
-  <text x="600" y="1360" text-anchor="middle" font-family="Arial, sans-serif" font-size="46" fill="#795d71">PLACE amel.jpg HERE</text>
+  <circle cx="600" cy="520" r="210" fill="#FAF9F5" opacity=".85"/>
+  <path d="M270 1260c55-270 185-410 330-410s275 140 330 410" fill="#FAF9F5" opacity=".8"/>
+  <text x="600" y="565" text-anchor="middle" font-family="Georgia, serif" font-size="220" fill="#4E6672">AZ</text>
+  <text x="600" y="1360" text-anchor="middle" font-family="Arial, sans-serif" font-size="46" fill="#4A403B">PLACE amel.jpg HERE</text>
 </svg>

@@ -41,3 +41,26 @@ Proyek ini sengaja dibuat ringan:
 - Enam scene
 - Tombol Reduce Motion tersedia
 - Semua scene dapat di-scroll
+
+
+## Tema visual: Calm Morning Edition
+
+Palet:
+
+- Mist Blue: `#E8F0F3`
+- Powder Blue: `#AFC8D3`
+- Slate Navy: `#4E6672`
+- Warm Beige: `#E6D5C4`
+- Soft Copper: `#B78668`
+- Deep Mocha: `#4A403B`
+- Off White: `#FAF9F5`
+
+Animasi ringan:
+
+- Buku membuka satu kali di opening
+- Teks muncul bertahap
+- Journey Cards dan Calm Notes muncul berurutan
+- Garis dekoratif tumbuh perlahan
+- Amplop surat tetap terbuka secara interaktif
+- Cahaya lembut bergerak pada closing
+- Tidak menggunakan canvas, partikel, confetti, atau blur berat

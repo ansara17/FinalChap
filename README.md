@@ -64,3 +64,45 @@ Animasi ringan:
 - Amplop surat tetap terbuka secara interaktif
 - Cahaya lembut bergerak pada closing
 - Tidak menggunakan canvas, partikel, confetti, atau blur berat
+
+
+## Automatic cache refresh
+
+The project now uses automatic cache busting for:
+
+- `style.css`
+- `script.js`
+
+Each page load adds a unique query version, for example:
+
+```text
+style.css?v=m5x8abc
+script.js?v=m5x8abc
+```
+
+After a GitHub Pages deployment finishes, a normal refresh is usually enough.
+`Ctrl + Shift + R` should no longer be needed for CSS or JavaScript changes.
+
+Photo and music files remain cacheable so the website does not download large
+media files again on every visit. If the photo or music itself is replaced and
+an old version still appears, rename the media file and update its path once.
+
+
+## Mobile alignment revision
+
+Perbaikan ini menangani:
+
+- Closing yang melebar ke kanan pada ponsel.
+- Judul `Bismillahirrahmanirrahim.` yang memaksa seluruh panel menjadi lebih lebar.
+- Panel doa dan reminder yang tidak berada tepat di tengah.
+- Foto profil yang terlalu mendominasi layar ponsel.
+- Grid item yang dapat memperbesar lebar scene karena aturan minimum-content CSS Grid.
+
+Ukuran yang diuji:
+
+- 390 × 844
+- 360 × 800
+- 320 × 568
+
+Hasil pengujian: seluruh enam scene memiliki lebar scroll yang sama dengan
+lebar viewport dan tidak menghasilkan horizontal overflow.

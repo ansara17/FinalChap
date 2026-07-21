@@ -62,3 +62,38 @@ Off White    #FAF9F5
 ```
 
 Animasi hanya memakai `opacity` dan `transform` agar tetap ringan.
+
+
+## Automatic cache busting
+
+File: `index.html`
+
+Cari:
+
+```javascript
+window.__ASSET_VERSION__
+```
+
+Sistem ini menambahkan versi unik ke `style.css` dan `script.js` setiap kali
+halaman dibuka. Jangan menghapus blok tersebut apabila Anda ingin perubahan
+kode dapat tampil tanpa hard refresh.
+
+Catatan:
+- Refresh biasa tetap diperlukan setelah deployment selesai.
+- GitHub Pages dapat membutuhkan beberapa menit untuk menyelesaikan deployment.
+- Foto dan musik tidak diberi versi baru setiap reload agar tetap hemat data.
+
+
+## Mobile alignment patch
+
+File: `style.css`
+
+Cari:
+
+```css
+MOBILE ALIGNMENT PATCH
+```
+
+Bagian ini menjaga closing, profile, dan panel lainnya tetap berada di tengah
+pada layar ponsel. Jangan menghapus aturan `min-width: 0`, karena aturan tersebut
+mencegah elemen CSS Grid melebar mengikuti teks yang panjang.

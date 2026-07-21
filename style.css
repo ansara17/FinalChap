@@ -285,3 +285,117 @@ body{
     transition-duration:.01ms!important;
   }
 }
+
+
+/* =========================================================
+   MOBILE ALIGNMENT PATCH
+   Prevents long headings and grid items from widening scenes.
+   ========================================================= */
+
+html,
+body,
+.app,
+.scene {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+.scene-inner,
+.scene-inner > *,
+.profile-layout > *,
+.letter-layout > *,
+.closing-layout,
+.closing-layout > * {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.closing-layout {
+  width: min(850px, calc(100% - 26px));
+  margin-inline: auto;
+}
+
+.closing-layout .eyebrow,
+.closing-layout h2,
+.closing-copy,
+.closing-copy > * {
+  max-width: 100%;
+}
+
+.closing-layout .eyebrow,
+.closing-copy,
+.closing-copy > * {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+.closing-copy {
+  width: 100%;
+}
+
+.closing-reminders li {
+  max-width: 100%;
+  white-space: normal;
+}
+
+@media (max-width: 640px) {
+  .profile-layout,
+  .letter-layout {
+    gap: 28px;
+  }
+
+  .portrait-card {
+    width: min(310px, 80vw);
+  }
+
+  .closing-layout {
+    width: calc(100% - 26px);
+  }
+
+  .closing-layout .eyebrow {
+    width: 100%;
+    padding-inline: 8px;
+    font-size: 0.61rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .closing-layout h2 {
+    width: 100%;
+    padding-inline: 2px;
+    font-size: clamp(1.8rem, 9vw, 2.3rem);
+    line-height: 0.98;
+    letter-spacing: -0.045em;
+    white-space: nowrap;
+    overflow-wrap: normal;
+    text-align: center;
+  }
+
+  .closing-copy {
+    margin-top: 20px;
+    padding: 21px 18px;
+  }
+
+  .closing-reminders {
+    gap: 8px;
+  }
+
+  .closing-reminders li {
+    padding: 8px 11px;
+    font-size: 0.76rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .portrait-card {
+    width: min(280px, 82vw);
+  }
+
+  .closing-layout h2 {
+    font-size: clamp(1.8rem, 9vw, 2.05rem);
+  }
+
+  .closing-copy {
+    padding-inline: 15px;
+  }
+}
